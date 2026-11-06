@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarCast Acting Academy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fff8f0;
+            color: #292344;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff4d6d, #ff8c42);
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #292344;
+        }
+
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(120deg, #6424a8, #e84393, #ff914d);
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffdf4d;
+            color: #292344;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 34px;
+            color: #e84393;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            background: #fff0d9;
+        }
+
+        .courses {
+            background: #f3e8ff;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 30px 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #7437bd;
+            margin: 15px 0;
+        }
+
+        .emoji {
+            font-size: 45px;
+        }
+
+        .audition {
+            background: #ffe4e9;
+        }
+
+        .audition p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            background: #e4faff;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 25px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #00000015;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #7437bd;
+        }
+
+        footer {
+            background: #292344;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎬 StarCast Academy</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#audition">Auditions</a>
+            <a href="#contact">Join Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+        <h2>Lights, Camera, ACTION!</h2>
+        <p>Discover Your Talent. Build Your Confidence. Become a Star!</p>
+        <a href="#contact" class="btn">Apply For Audition</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Our Academy</h2>
+        <p>
+            Welcome to StarCast Acting Academy, where dreams meet opportunities!
+            We help aspiring actors develop their acting skills, confidence,
+            personality and creativity. Our academy provides professional
+            training for students who dream of becoming actors.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>Our Training Programs</h2>
+
+        <div class="course-container">
+
+            <div class="card">
+                <div class="emoji">🎭</div>
+                <h3>Acting Classes</h3>
+                <p>Learn acting techniques, expressions and character development.</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🎥</div>
+                <h3>Camera Acting</h3>
+                <p>Learn how to perform confidently in front of the camera.</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">💃</div>
+                <h3>Dance & Expressions</h3>
+                <p>Improve your body language, dance and stage performance.</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🎤</div>
+                <h3>Audition Training</h3>
+                <p>Prepare for film, television and web-series auditions.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Audition Section -->
+    <section class="audition" id="audition">
+        <h2>Upcoming Auditions</h2>
+        <p>
+            Have a passion for acting? This is your chance to shine!
+            We welcome beginners and aspiring actors.
+            Register today and take your first step towards your dream.
+        </p>
+        <a href="#contact" class="btn">Register Now</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Join Our Academy</h2>
+        <p>Fill out the registration form to begin your acting journey.</p>
+
+        <form onsubmit="register(event)">
+            <input type="text" placeholder="Your Full Name" required>
+
+            <input type="email" placeholder="Your Email Address" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <select required>
+                <option value="">Select Your Course</option>
+                <option>Acting Classes</option>
+                <option>Camera Acting</option>
+                <option>Dance & Expressions</option>
+                <option>Audition Training</option>
+            </select>
+
+            <textarea placeholder="Why do you want to join us?" rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🎬 StarCast Acting Academy</h3>
+        <p>Follow Your Dreams. Become The Star!</p>
+        <p>© 2026 StarCast Academy | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function register(event) {
+            event.preventDefault();
+            alert("Thank you for your interest! Your application has been received in this demo.");
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>
